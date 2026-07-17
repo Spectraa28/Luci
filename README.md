@@ -1,6 +1,6 @@
-Luci - Agent 
+# Luci
 
-** Your Own AI assistant . ON you laptop. **
+**Your local-first AI second brain. Built for builders.**
 
- Meet **Luci** , A local first personal assistant that shows the four pillars behind every Agent . Harness - Loop - Memory - Eval / LLM-Ops . NO frameworks hiding the good parts. 
-
+Luci is a minimal, transparent personal AI agent — harness, loop, memory, and eval
+in code you can read in an afternoon. No black-box frameworks. Every file does one thing.

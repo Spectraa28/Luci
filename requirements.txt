@@ -1,0 +1,17 @@
+anthropic>=0.40
+openai>=1.50
+python-dotenv>=1.0
+rich>=13.0
+pytest>=8.0
+deepeval>=2.0
+arize-phoenix>=7.0
+opentelemetry-sdk>=1.27
+opentelemetry-exporter-otlp>=1.27
+python-telegram-bot>=21.0
+faster-whisper>=1.0
+sounddevice>=0.4
+kokoro>=0.9
+soundfile>=0.12
+supabase>=2.0
+mcp>=1.0
+ruff>=0.6

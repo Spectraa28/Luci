@@ -1,0 +1,74 @@
+[project]
+name = "luci"
+version = "0.1.0"
+description = "Luci — a local-first AI second brain for builders. Harness + loop + memory + eval, in code you can read in an afternoon."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Sonu Verma" }]
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40",
+    "arize-phoenix>=7.0",
+    "deepeval>=2.0",
+    "faster-whisper>=1.0",
+    "google-api-python-client>=2.198.0",
+    "google-auth-oauthlib>=1.4.0",
+    "kokoro>=0.9",
+    "mcp>=1.0",
+    "openai>=1.50",
+    "opentelemetry-exporter-otlp>=1.27",
+    "opentelemetry-sdk>=1.27",
+    "pytest>=8.0",
+    "python-dotenv>=1.0",
+    "python-telegram-bot>=21.0",
+    "rich>=13.0",
+    "ruff>=0.6",
+    "sounddevice>=0.4",
+    "soundfile>=0.12",
+    "supabase>=2.0",
+]
+
+[project.scripts]
+luci = "luci.__main__:main"
+
+[project.optional-dependencies]
+eval = [
+    "pytest>=8.0",
+    "deepeval>=2.0",
+]
+tracing = [
+    "arize-phoenix>=7.0",
+    "opentelemetry-sdk>=1.27",
+    "opentelemetry-exporter-otlp>=1.27",
+]
+telegram = [
+    "python-telegram-bot>=21.0",
+]
+voice = [
+    "faster-whisper>=1.0",
+    "sounddevice>=0.4",
+]
+voice-neural = [
+    "kokoro>=0.9",
+    "soundfile>=0.12",
+]
+supabase = [
+    "supabase>=2.0",
+]
+mcp = [
+    "mcp>=1.0",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["luci"]
+
+[tool.ruff]
+line-length = 100

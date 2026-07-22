@@ -1,7 +1,7 @@
 [project]
 name = "luci"
 version = "0.1.0"
-description = "Luci — a local-first AI second brain for builders. Harness + loop + memory + eval, in code you can read in an afternoon."
+description = "luci — a local-first AI second brain for builders. Harness + loop + memory + eval, in code you can read in an afternoon."
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Sonu Verma" }]
@@ -61,6 +61,12 @@ mcp = [
 dev = [
     "pytest>=8.0",
     "ruff>=0.6",
+]
+
+google = [
+    "google-auth>=2.30",
+    "google-auth-oauthlib>=1.2",
+    "requests>=2.31",
 ]
 
 [build-system]
